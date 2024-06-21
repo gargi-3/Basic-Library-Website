@@ -1,0 +1,144 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: rgb(205, 201, 187);
+    margin: 0;
+    /* padding: 0; */
+}
+
+.background{
+    background-image: url("library.png");
+    position: absolute;
+    height: 100%; 
+    width: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.7;
+    z-index: -1; /*sets the stack order of element*/ 
+}
+
+.logo{
+    margin: 10px;
+    height: 60px;
+    display: flex;
+}
+
+nav{
+    /* background-color: lavender; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1{
+    font-size: 30px;
+    padding: 0 15px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+nav ul li a:hover{
+    color: rgba(69, 43, 12, 0.655);
+}
+
+h1{
+    font-size: 70px;
+}
+
+main{
+    padding: 135px 60px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+form{
+    background-color: rgba(76, 53, 12, 0.63);
+    margin: 5rem auto;
+    padding: 2rem; /*1rem=16px*/
+    border-radius: 3px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+form h2{
+    text-align: center;
+}
+
+form label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input{
+    width: 95%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border-color: #ccc;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form button{
+    width: 100px;
+    margin-left: 200px;
+    padding: 0.75rem;
+    background-color: rgb(69, 69, 69);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #313131;
+} 
+
+/* Book list style */
+.book-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.book-item{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+}
+
+.book-item img{
+    /* max-width: 100%; */
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.book-item h3{
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem;
+}
+
+.book-item p{
+    color: #555;
+    font-size: 0.9rem;
+}
